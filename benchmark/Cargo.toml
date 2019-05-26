@@ -1,0 +1,12 @@
+[package]
+name = "benchmark"
+version = "0.0.2"
+authors = ["lilydjwg <lilydjwg@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+toml = "*"
+glob = "*"
+
+[profile.release]
+lto = true

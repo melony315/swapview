@@ -1,0 +1,33 @@
+# general
+*.cm?
+*.hi
+*.stamp
+*.class
+*.fasl
+*.beam
+*.o
+*.exe
+*.so
+erl_crash.dump
+node_modules/
+.cabal-sandbox/
+dist/
+cabal.sandbox.config
+packages/
+.packages
+pubspec.lock
+
+# swapview specific
+*/swapview
+Chicken/format
+CoffeeScript*/*.js
+D/swapview-llvm
+D_parallel/swapview-llvm
+C++98/swapview_omp
+Racket/compiled
+Nim/nimcache/
+maketime
+Rust_parallel/.swapview/target
+
+package-lock.json
+*.timestamp

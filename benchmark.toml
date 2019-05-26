@@ -1,0 +1,204 @@
+[options]
+# only valid for bench.py:
+ref_result = "C"
+time_field = "elapsed"
+show_diff_below = 0.9
+verbose = true
+
+[item.default]
+cmd = ["./swapview"]
+dir = "$name"
+time_limit = 30
+count_limit = 20
+valid_percent = 50
+
+
+[item.Bash]
+cmd = ["./swapview.sh"]
+
+[item.Bash_parallel]
+cmd = ["./swapview.sh"]
+
+[item.POSIX_dash]
+dir = "POSIX_shell"
+cmd = ["dash", "./swapview.sh"]
+
+[item.POSIX_bash]
+dir = "POSIX_shell"
+cmd = ["bash", "./swapview.sh"]
+
+[item.POSIX_zsh]
+dir = "POSIX_shell"
+cmd = ["zsh", "./swapview.sh"]
+
+[item.C]
+
+[item."C++11"]
+
+[item."C++14"]
+
+[item."C++14_boost"]
+
+[item."C++17"]
+
+[item."C++98"]
+
+[item."C++98_omp"]
+cmd = ["./swapview_omp"]
+dir = "C++98"
+
+[item.Crystal]
+
+[item.CSharp]
+cmd = ["mono-sgen", "--desktop", "SwapView.exe"]
+
+[item.ChezScheme]
+cmd = ["chez-scheme", "--program", "swapview.so"]
+
+[item.Chicken]
+
+[item.CoffeeScript]
+cmd = ["node", "swapview.js"]
+
+[item.CoffeeScript_parallel]
+cmd = ["node", "swapview.js"]
+
+[item.CommonLisp_old]
+cmd = ["./swapview.lisp"]
+
+[item.CommonLisp_opt]
+
+[item.Cython]
+cmd = ["python", "-c", "import swapview"]
+
+[item.D]
+
+[item.D_llvm]
+cmd = ["./swapview-llvm"]
+dir = "D"
+
+[item.D_parallel]
+
+[item.D_parallel_llvm]
+cmd = ["./swapview-llvm"]
+dir = "D_parallel"
+
+[item.Dart]
+cmd = ["dart", "swapview.dart"]
+
+[item.Elixir]
+cmd = ["./swapview.exs"]
+
+[item.Erlang]
+
+[item.FreePascal]
+
+[item.Go]
+
+[item.Go_goroutine]
+
+[item.Guile]
+cmd = ["./swapview.scm"]
+
+[item.Haskell]
+
+[item.Haskell2]
+
+[item.Java]
+cmd = ["java", "-dsa", "-Xmixed", "-XX:CompileThreshold=4096", "-XX:+TieredCompilation", "-XX:TieredStopAtLevel=1", "-XX:+UseSerialGC", "SwapView"]
+
+[item.Julia]
+cmd = ["./swapview.jl"]
+
+[item.Lua51]
+cmd = ["lua5.1", "swapview.lua"]
+dir = "Lua"
+
+[item.Lua52]
+cmd = ["lua5.2", "swapview.lua"]
+dir = "Lua"
+
+[item.Lua53]
+cmd = ["lua", "swapview.lua"]
+dir = "Lua"
+
+[item.LuaJIT]
+cmd = ["luajit", "swapview.lua"]
+dir = "Lua"
+
+[item.Nim]
+
+[item.NodeJS]
+cmd = ["./swapview.js"]
+
+[item.NodeJS_async]
+cmd = ["./swapview.js"]
+
+[item.NodeJS_cluster]
+cmd = ["node", "swapview.js"]
+
+[item.OCaml]
+
+[item.OCaml_lwt]
+
+[item.Perl]
+cmd = ["./swapview.pl"]
+
+[item.PHP]
+cmd = ["./swapview.php"]
+
+[item.Python2]
+cmd = ["python2", "swapview.py"]
+dir = "Python"
+
+[item.Python3]
+cmd = ["python3", "swapview.py"]
+dir = "Python"
+
+[item.Python3_bytes]
+cmd = ["python3", "swapview.py"]
+
+[item.Python3_mp]
+cmd = ["python3", "swapview.py"]
+dir = "Python_mp"
+
+[item.PyPy]
+cmd = ["pypy", "swapview.py"]
+dir = "Python"
+
+[item.PyPy3]
+cmd = ["pypy3", "swapview.py"]
+dir = "Python"
+
+[item.PyPy3_bytes]
+cmd = ["pypy3", "swapview.py"]
+dir = "Python3_bytes"
+
+[item.R]
+cmd = ["./swapview.r"]
+
+[item.Racket]
+cmd = ["./swapview.rkt"]
+
+[item.Racket_compiled]
+dir = "Racket"
+cmd = ["racket", "compiled/swapview_rkt.zo"]
+
+[item.Ruby]
+cmd = ["./swapview.rb"]
+
+[item.Ruby_rubinius]
+dir = "Ruby"
+cmd = ["rbx", "swapview.rb"]
+
+[item.Rust]
+
+[item.Rust_parallel]
+
+[item.Scala]
+cmd = ["scala", "SwapView"]
+
+[item.Tcl]
+cmd = ["./swapview.tcl"]
+
+[item.Vala]

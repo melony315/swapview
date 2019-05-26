@@ -1,0 +1,11 @@
+[package]
+name = "swapview"
+version = "0.0.1"
+authors = ["lilydjwg <lilydjwg@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+rayon = "0.8"
+
+[profile.release]
+lto = true
